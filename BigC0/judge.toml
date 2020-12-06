@@ -3,5 +3,5 @@
 image = { source = "dockerfile", path = ".", tag = "pascal-lex-example" }
 
 run = [
-  "java un $input $asm",
+  "java -jar build/libs/BigC0.jar -l $input -o $asm",
 ]
